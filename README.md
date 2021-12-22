@@ -9,9 +9,10 @@ Our Repository consists of the main folder, containing our general functions suc
 - The **T1_GramStaining** folder contains all scripts for training and evaluation on the Gram Staining Classification Task.
 - The **T2_BacteriaVirus** folder contains all scripts for training and evaluation on the Bacteria-Virus Classification Task.
 - The **T3_Chromatin** folder contains all scripts for training and evaluation on the Chromatin Features Classification Task.
+- The **images** folder contains the plots visualizing the results we obtained.
 
 <p align="center">
-<img src="/cpc.png" width=600 align=center>
+<img src="/images/cpc.png" width=600 align=center>
 </p>
 
 ## Enviromental setup
@@ -98,17 +99,17 @@ Following performances were achieved:
 
 Gram Staining Classification
 <p align="center">
-<img src="/Gram_all.png" width=600 align=center>
+<img src="/images/Gram_all.png" width=600 align=center>
 </p>
 
 Bacteria-Virus Classification
 <p align="center">
-<img src="/BacVir_all.png" width=600 align=center>
+<img src="/images/BacVir_all.png" width=600 align=center>
 </p>
 
 Chromatin Features Classification
 <p align="center">
-<img src="/Chromatin_all.png" width=600 align=center>
+<img src="/images/Chromatin_all.png" width=600 align=center>
 </p>
 
 
@@ -127,12 +128,12 @@ These are the TSNE-plots resulting from self-supervised models trained in our ex
 
 Gram Staining Classification
 <p align="center">
-<img src="/tsne_gram.png" width=600 align=center>
+<img src="/images/tsne_gram.png" width=600 align=center>
 </p>
 
 Bacteria-Virus Classification
 <p align="center">
-<img src="/tsne_BacVir.png" width=600 align=center>
+<img src="/images/tsne_BacVir.png" width=600 align=center>
 </p>
 
 
