@@ -25,7 +25,7 @@ The three folders containing all scripts for training and evaluation on the diff
 
 ## Enviromental setup
 
-Our models are trained using GPUs. 
+Our models are trained using NVIDIA Tesla V100 GPU machines with 32 gigabytes memory capacity and are based on Linux. The python version used is python 3.7.11 with CUDA 11.3.1. Please install the R packages listed in requrementsR.txt and the python packages in requirements.txt before running the scripts.
 
 ## Run Self-Supervised Pretraining
 To run the Self-Supervised Pretraining, enter the command below. Please note, that here, the relative data_directory is used. If you receive an error message, please check if your current directory is the project repository folder. The first argument denotes the data used for pretraining, the second argument denotes the encoder architecture, the third argument denotes the maximum number of samples per file.
