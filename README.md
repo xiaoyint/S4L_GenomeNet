@@ -6,7 +6,7 @@ However, in the age of high throughput sequencing, there is a large quantity of 
 Out of the multiple possible avenues to semi-supervised learning, we tackle the problem through representation learning, which has shown promising results in previous studies. 
 We investigate this issue using representations for semi-supervised-learning by applying a Contrastive Predictive Coding architecture and a language model predicting the next following nucleotide from a given genome sequence. The representations are evaluated by three downstream tasks from genomics: (1) The differentiation between Gram-positive and Gram-negative bacteria, (2) the differentiation between bacteria, phage-viruses, and other viruses, and (3) the recognition of different chromatin effects of sequence alterations in the human genome.
 The performance is compared with fully supervised approaches. 
-We find that the language model predicting the next nucleotide from a sequence performs better than the CPC model. However, the gain in performance compared to the fully supervised approaches is rather small and further research is needed to draw more definitive conclusions.
+We find that the language model predicting the next nucleotide from a sequence performs better than the CPC model (concept visualized in Figure below). However, the gain in performance compared to the fully supervised approaches is rather small and further research is needed to draw more definitive conclusions.
 
 <p align="center">
 <img src="/images/cpc.png" width=600 align=center>
@@ -20,6 +20,8 @@ Our Repository consists of the main folder, containing our general functions suc
 - The **T2_BacteriaVirus** folder contains all scripts for training and evaluation on the Bacteria-Virus Classification Task.
 - The **T3_Chromatin** folder contains all scripts for training and evaluation on the Chromatin Features Classification Task.
 - The **images** folder contains the plots visualizing the results we obtained.
+
+The three folders containing all scripts for training and evaluation on the different tasks are from the same structure. Each folder includes a ``baseline.R`` script, which runs the training for the baseline model, a ``semi.R`` which runs the supervised model given the self-supervised pretrained model and ``eval.R``, which evaluates the performance on the test data. Additionally, for the Gram Staining and the Bacteria-Virus Classification Task, ``regularization.R`` computes lasso regression given the self-supervised pretrained model and ``tsne.R`` creates T-distributed stochastic neighbor embedding (TSNE) plots of the representations.
 
 ## Enviromental setup
 
